@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_jWM_QH1mEeuPaZ49Pq2wvw" name="Problema2P3" visibility="private">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_jjBTQH1mEeuPaZ49Pq2wvw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_zQFCAH1mEeuPaZ49Pq2wvw" name="Problema2P3">
+    <packagedElement xmi:type="uml:Class" xmi:id="_4S_iQH1mEeuPaZ49Pq2wvw" name="Fruta">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Fcc2YH1oEeuPaZ49Pq2wvw" name="nombre" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_JLD2IH1oEeuPaZ49Pq2wvw" name="extension " visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_b74Q0H1oEeuPaZ49Pq2wvw" name="tiempoCosecha" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_cMlmUH1oEeuPaZ49Pq2wvw" name="cantCosechaxTiempo" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_cf0rYH1oEeuPaZ49Pq2wvw" name="costoPromedio" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_cudkUH1oEeuPaZ49Pq2wvw" name="precioVentaProm" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+      </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_U97csH1nEeuPaZ49Pq2wvw" name="AgregarPeriodo">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_jSHpIH1pEeuPaZ49Pq2wvw" direction="return">
+          <type xmi:type="uml:Class" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap-_ownedElement.0-_ownedParameter.1-_ownedParameteredElement"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_mo7z8H1pEeuPaZ49Pq2wvw" name="periodo">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_rgv3cH1pEeuPaZ49Pq2wvw" name="cantEstimada">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_VTRakH1nEeuPaZ49Pq2wvw" name="eliminarPeriodo">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_wkBkEH1pEeuPaZ49Pq2wvw" name="i">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_yeWiwH1pEeuPaZ49Pq2wvw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_Vt2dwH1nEeuPaZ49Pq2wvw" name="costoPeriodo">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_8fsr4H1pEeuPaZ49Pq2wvw" name="i">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_-pK50H1pEeuPaZ49Pq2wvw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_V7kwsH1nEeuPaZ49Pq2wvw" name="ganancia" concurrency="guarded">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_BWsQAH1qEeuPaZ49Pq2wvw" name="i">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_D-8rsH1qEeuPaZ49Pq2wvw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
